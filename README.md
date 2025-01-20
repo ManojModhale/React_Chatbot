@@ -2,6 +2,17 @@
 
 This guide provides a step-by-step approach to setting up a React-based chatbot application, including backend and frontend development.
 
+- The frontend of the application will run on `http://localhost:3000` in your browser.
+- The backend of the application will run on `http://localhost:5000`.
+
+### How to Run:
+
+1. Clone the repository to your local machine.  
+2. Navigate to the frontend directory and run:
+   ```bash
+   npm install
+   npm start
+
 ## Backend Setup
 
 1. **Create a Backend Directory**
