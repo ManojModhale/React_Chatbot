@@ -68,17 +68,17 @@ This guide provides a step-by-step approach to setting up a React-based chatbot 
    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Developer@01';
    FLUSH PRIVILEGES;
    ```
-
-5. **Start Backend Server**
-   Create a file named `server.js` and run:
-   ```bash
-   node server.js
-   ```
-
-6. **Install MySQL Driver**
+   
+5. **Install MySQL Driver**
    ```bash
    npm install mysql@latest
    npm install mysql2
+   ```
+
+6. **Start Backend Server**
+   Create a file named `server.js` and run:
+   ```bash
+   node server.js
    ```
 
 7. **Create Database and Table**
