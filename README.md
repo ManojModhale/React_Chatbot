@@ -134,7 +134,7 @@ This guide provides a step-by-step approach to setting up a React-based chatbot 
 ## Additional Notes
 - Ensure your backend and frontend servers are running on separate ports.
 - Use `axios` for API calls to connect the frontend with the backend.
-- Keep your MySQL credentials secure in environment files or configuration files.
+- Keep your MySQL credentials correct for configuration.
 
 
   
