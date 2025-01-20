@@ -32,7 +32,13 @@ This guide provides a step-by-step approach to setting up a React-based chatbot 
    node server.js
    ```
 
-6. **Create Database and Table**
+6. **Install MySQL Driver**
+   ```bash
+   npm install mysql@latest
+   npm install mysql2
+   ```
+
+7. **Create Database and Table**
    ```sql
    CREATE DATABASE chatbot_db;
 
@@ -61,11 +67,7 @@ This guide provides a step-by-step approach to setting up a React-based chatbot 
    SELECT * FROM products;
    ```
 
-7. **Install MySQL Driver**
-   ```bash
-   npm install mysql@latest
-   npm install mysql2
-   ```
+
 
 ## Frontend Setup
 
