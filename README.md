@@ -15,22 +15,22 @@ This guide provides a step-by-step approach to setting up a React-based chatbot 
 
 2. ### Database Configuration
 
-In your Node.js application, the MySQL connection pool is configured in server.js file as follows:
+   In your Node.js application, the MySQL connection pool is configured in server.js file as follows:
 
-```javascript
-const mysql = require('mysql2');
+   ```javascript
+   const mysql = require('mysql2');
 
-const pool = mysql.createPool({
-  host: '',       // MySQL server host
-  port: ,              // MySQL server port
-  user: '',            // MySQL username
-  password: '', // MySQL password
-  database: '',  // Database name
-  waitForConnections: true, // Wait for connections if pool is full
-  connectionLimit: 10,     // Maximum number of connections in pool
-  queueLimit: 0            // No limit for queued requests
-});
-```
+   const pool = mysql.createPool({
+     host: '',       // MySQL server host
+     port: ,              // MySQL server port
+     user: '',            // MySQL username
+     password: '', // MySQL password
+     database: '',  // Database name
+     waitForConnections: true, // Wait for connections if pool is full
+     connectionLimit: 10,     // Maximum number of connections in pool
+     queueLimit: 0            // No limit for queued requests
+   });
+   ```
 
 3. Run Commands :
     ```bash
