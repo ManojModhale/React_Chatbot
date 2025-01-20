@@ -7,11 +7,43 @@ This guide provides a step-by-step approach to setting up a React-based chatbot 
 
 ### How to Run:
 
-1. Clone the repository to your local machine.  
-2. Navigate to the frontend directory and run:
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ManojModhale/React_Chatbot.git
+   ```
+
+2. ### Database Configuration
+
+In your Node.js application, the MySQL connection pool is configured in server.js file as follows:
+
+```javascript
+const mysql = require('mysql2');
+
+const pool = mysql.createPool({
+  host: '',       // MySQL server host
+  port: ,              // MySQL server port
+  user: '',            // MySQL username
+  password: '', // MySQL password
+  database: '',  // Database name
+  waitForConnections: true, // Wait for connections if pool is full
+  connectionLimit: 10,     // Maximum number of connections in pool
+  queueLimit: 0            // No limit for queued requests
+});
+```
+
+3. Run Commands :
+    ```bash
+   node server.js
+   ```
+    
    ```bash
    npm install
+   ```
+
+   ```bash
    npm start
+   ```
 
 ## Backend Setup
 
@@ -104,16 +136,5 @@ This guide provides a step-by-step approach to setting up a React-based chatbot 
 - Use `axios` for API calls to connect the frontend with the backend.
 - Keep your MySQL credentials secure in environment files or configuration files.
 
-## Common Commands
-- To install additional packages:
-  ```bash
-  npm install <package_name>
-  ```
-- To run the backend server:
-  ```bash
-  node server.js
-  ```
-- To start the React frontend:
-  ```bash
-  npm start
+
   
